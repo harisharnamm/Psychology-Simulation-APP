@@ -38,3 +38,30 @@ export interface SurveyQuestion {
   type: 'likert' | 'yesno';
   condition?: (state: ExperimentState) => boolean;
 }
+
+// Add missing types
+export interface Scene {
+  id: string;
+  title: string;
+  description: string;
+  isEnding: boolean;
+  gifUrl?: string;
+  choices: Choice[];
+}
+
+export interface Choice {
+  id: string;
+  text: string;
+  nextSceneId: string;
+  impact?: {
+    confidence?: number;
+    anxiety?: number;
+    stress?: number;
+  };
+}
+
+export interface GameState {
+  anxiety: number;
+  confidence: number;
+  stress: number;
+}

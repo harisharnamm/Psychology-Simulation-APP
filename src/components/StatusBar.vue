@@ -1,9 +1,12 @@
 <script setup lang="ts">
 import { defineProps } from 'vue';
-import type { GameState } from '../types';
 
 defineProps<{
-  gameState: GameState;
+  gameState: {
+    anxiety: number;
+    confidence: number;
+    stress: number;
+  };
 }>();
 </script>
 

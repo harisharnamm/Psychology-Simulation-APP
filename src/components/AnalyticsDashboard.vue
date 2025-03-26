@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { computed } from 'vue';
-import type { ExperimentState, InteractionEvent } from '../types';
+import type { ExperimentState } from '../types';
 
 const props = defineProps<{
   state: ExperimentState;

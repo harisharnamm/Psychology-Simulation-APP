@@ -1,6 +1,6 @@
 import type { Scene } from '../types';
 
-export const scenarios: Scene[] = {
+export const scenarios: Record<string, Scene> = {
   start: {
     id: 'start',
     title: 'First Day at University',

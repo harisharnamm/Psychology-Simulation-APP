@@ -1,9 +1,13 @@
 <script setup lang="ts">
 import { defineProps } from 'vue';
-import type { Scene } from '../types';
 
-const props = defineProps<{
-  scene: Scene;
+defineProps<{
+  scene: {
+    title: string;
+    description: string;
+    gifUrl?: string;
+    choices: { id: string; text: string }[];
+  };
   onChoice: (choiceId: string) => void;
 }>();
 </script>

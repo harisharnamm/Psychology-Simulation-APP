@@ -3,7 +3,7 @@ import { ref } from 'vue';
 import type { ExperimentState } from '../types';
 import { surveyQuestions } from '../data/survey';
 
-const props = defineProps<{
+defineProps<{
   state: ExperimentState;
 }>();
 

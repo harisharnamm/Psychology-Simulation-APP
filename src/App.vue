@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { ref, reactive, onMounted } from 'vue';
+import { reactive } from 'vue';
 import WelcomeScreen from './components/WelcomeScreen.vue';
 import DemographicsForm from './components/DemographicsForm.vue';
 import ProductCard from './components/ProductCard.vue';
